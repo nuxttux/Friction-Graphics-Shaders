@@ -1,0 +1,20 @@
+<!-- Rim Light with Softening -->
+<ShaderEffect name="Rim Light" menuPath="Light And Shadow">
+    <Properties>
+        <Property name="intensity" nameUI="Intensity" type="float"
+                  min="0.0" max="5.0" ini="1.0" step="0.1" glValue="true"/>
+        <Property name="distance" nameUI="Distance" type="float"
+                  min="0.0" max="50.0" ini="2.0" step="0.1" glValue="true"/>
+        <Property name="soften" nameUI="Softening" type="float"
+                  min="0.0" max="10.0" ini="3.0" step="0.1" glValue="true"/>
+        <Property name="angle" nameUI="Angle" type="float"
+                  min="0.0" max="360.0" ini="45.0" step="1.0" glValue="true"/>
+        <Property name="rimColor" nameUI="Rim Color" type="color"
+                  ini="[1.0,1.0,1.0,1.0]" glValue="true"/>
+    </Properties>
+    <glValues>
+        <glValue name="resolution" type="vec2" value="[_eRect[2], _eRect[3]]"/>
+    </glValues>
+</ShaderEffect>
+
+

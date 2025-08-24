@@ -1,0 +1,13 @@
+<!--3D Box-->
+<ShaderEffect name="4-Corner" menuPath="Transform">
+    <Properties>
+        <Property name="topLeft" nameUI="Top Left" xnameUI="X" ynameUI="Y" type="vec2" min="-2.0" max="2.0" ini="[0.0,0.0]" step="0.010" glValue="true"/>
+        <Property name="topRight" nameUI="Top Right" xnameUI="X" ynameUI="Y" type="vec2" min="-2.0" max="2.0" ini="[1.0,0.0]" step="0.010" glValue="true"/>
+        <Property name="bottomRight" nameUI="Bottom Right" xnameUI="X" ynameUI="Y" type="vec2" min="-2.0" max="2.0" ini="[1.0,1.0]" step="0.010" glValue="true"/>
+        <Property name="bottomLeft" nameUI="Bottom Left" xnameUI="X" ynameUI="Y" type="vec2" min="-2.0" max="2.0" ini="[0.0,1.0]" step="0.010" glValue="true"/>
+        <Property name="rotZ" nameUI="Rotate Z" type="float" min="-6.28319" max="6.28319" ini="0.0" step="0.01" glValue="true"/>
+        <Property name="edgeMode" nameUI="Edges" type="int" min="0" max="2" ini="0" step="1" glValue="true"/>
+        <Property name="margin" nameUI="Margin" type="int" min="0" max="99999" ini="100" step="1" glValue="false"/>
+    </Properties>
+    <Margin value="margin"/>
+</ShaderEffect>
