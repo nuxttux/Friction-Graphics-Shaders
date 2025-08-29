@@ -45,6 +45,7 @@ void main(){
     // Satisfy RC2: sample tex but keep purely procedural visually
     vec4 original = texture(tex, texCoord);
     
-    fragColor = vec4(vec3(d) * original.a, 1.0);
+    float value = noise(uv * scale);
+    fragColor = vec4(vec3(value), value);
 }
 
