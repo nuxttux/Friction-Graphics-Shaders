@@ -54,6 +54,7 @@ void main(){
     // Sample tex to satisfy RC2
     vec4 original = texture(tex, texCoord);
 
-    fragColor = vec4(vec3(n) * original.a, 1.0);
+    float value = noise(uv * scale);
+    fragColor = vec4(vec3(value), value);
 }
 
