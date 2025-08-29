@@ -1,0 +1,21 @@
+<!-- Light Rays 3 / God Rays -->
+<ShaderEffect name="Light Rays 3" menuPath="Light And Shadow">
+  <Description>Radial or directional moving rays from a point. Supports animation and multiple layers.</Description>
+  <Properties>
+    <Property name="origin" nameUI="Origin XY" type="vec2" ini="[0.5,0.5]" step="0.01" glValue="true"/>
+    <Property name="blankRadius" nameUI="Blank Center Radius" type="float" ini="0.1" min="0.0" max="1.0" step="0.01" glValue="true"/>
+    <Property name="spread" nameUI="Spread" type="float" ini="1.0" min="0.0" max="5.0" step="0.01" glValue="true"/>
+    <Property name="time" nameUI="Time" type="float" ini="0.0" min="0.0" max="1000.0" step="0.01" glValue="true"/>
+    <Property name="ray1_density" nameUI="Ray 1 Density" type="float" ini="10.0" min="0.0" max="50.0" step="0.1" glValue="true"/>
+    <Property name="ray2_density" nameUI="Ray 2 Density" type="float" ini="30.0" min="0.0" max="50.0" step="0.1" glValue="true"/>
+    <Property name="ray2_intensity" nameUI="Ray 2 Intensity" type="float" ini="0.3" min="0.0" max="2.0" step="0.01" glValue="true"/>
+    <Property name="color" nameUI="Ray Color" type="color" ini="[1.0,0.9,0.65,0.8]" glValue="true"/>
+    <Property name="seed1" nameUI="Seed 1" type="float" ini="5.0" min="0.0" max="1000.0" step="0.1" glValue="true"/>
+    <Property name="seed2" nameUI="Seed 2" type="float" ini="10.0" min="0.0" max="1000.0" step="0.1" glValue="true"/>
+    <Property name="angle" nameUI="Direction Angle (rad)" type="float" ini="0.0" min="0.0" max="6.2831853" step="0.01" glValue="true"/>
+    <Property name="cone" nameUI="Cone Half-Width (rad)" type="float" ini="3.1415926" min="0.0" max="3.1415926" step="0.01" glValue="true"/>
+    <Property name="mode" nameUI="Mode (0=radial,1=directional)" type="int" ini="0" min="0" max="1" step="1" glValue="true"/>
+  </Properties>
+</ShaderEffect>
+
+

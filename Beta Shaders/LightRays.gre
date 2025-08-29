@@ -1,0 +1,17 @@
+<!--Light Rays-->
+<ShaderEffect name="Light Rays" menuPath="Light And Shadow">
+  <Description>Radial light rays from a central point with multiple moving layers.</Description>
+  <Properties>
+    <Property name="origin" nameUI="Origin XY" type="vec2" ini="[0.5,0.5]" step="0.01" glValue="true"/>
+    <Property name="time" nameUI="Time" type="float" min="0.0" max="1000.0" ini="0.0" step="0.01" glValue="true"/>
+    <Property name="blankRadius" nameUI="Blank Center Radius" type="float" min="0.0" max="1.0" ini="0.1" step="0.01" glValue="true"/>
+    <Property name="ray1_density" nameUI="Ray 1 Density" type="float" min="0.0" max="50.0" ini="10.0" step="0.1" glValue="true"/>
+    <Property name="ray2_density" nameUI="Ray 2 Density" type="float" min="0.0" max="50.0" ini="30.0" step="0.1" glValue="true"/>
+    <Property name="ray2_intensity" nameUI="Ray 2 Intensity" type="float" min="0.0" max="2.0" ini="0.3" step="0.01" glValue="true"/>
+    <Property name="spread" nameUI="Spread" type="float" min="0.0" max="5.0" ini="1.0" step="0.01" glValue="true"/>
+    <Property name="color" nameUI="Ray Color" type="color" ini="[1.0,0.9,0.65,0.8]" glValue="true"/>
+    <Property name="seed1" nameUI="Seed 1" type="float" min="0.0" max="1000.0" ini="5.0" step="0.1" glValue="true"/>
+    <Property name="seed2" nameUI="Seed 2" type="float" min="0.0" max="1000.0" ini="10.0" step="0.1" glValue="true"/>
+  </Properties>
+</ShaderEffect>
+
