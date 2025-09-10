@@ -5,7 +5,7 @@
                   type="float" min="0.0" max="10000.0" ini="0.0" step="0.01"
                   glValue="true"/>
         <Property name="density" nameUI="Density"
-                  type="float" min="1.0" max="200.0" ini="40.0" step="1.0"
+                  type="float" min="1.0" max="200.0" ini="20.0" step="1.0"
                   glValue="true"/>
         <Property name="speed" nameUI="Speed"
                   type="float" min="0.1" max="5.0" ini="1.0" step="0.1"
