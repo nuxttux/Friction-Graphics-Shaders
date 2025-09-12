@@ -1,0 +1,14 @@
+<!-- Lift Gain Gamma -->
+<ShaderEffect name="Lift Gamma Gain" menuPath="Color">
+    <Properties>
+        <!-- Lift -->
+        <Property name="lift" nameUI="Lift" type="color" ini="[0.0,0.0,0.0,0.0]" glValue="true"/>
+
+        <!-- Gamma -->
+        <Property name="gamma" nameUI="Gamma" type="color" ini="[1.0,1.0,1.0,1.0]" glValue="true"/>
+
+        <!-- Gain -->
+        <Property name="gain" nameUI="Gain" type="color" ini="[1.0,1.0,1.0,1.0]" glValue="true"/>
+    </Properties>
+</ShaderEffect>
+
