@@ -1,0 +1,11 @@
+<!-- Procedural Noise / Turbulence -->
+<ShaderEffect name="Procedural Noise" menuPath="Shaders">
+<Description>FBM noise driven procedural overlay. Mask-ready.</Description>
+  <Properties>
+    <Property name="time" nameUI="Time" type="float" ini="0.0" min="-10000" max="10000" step="0.01" glValue="true"/>
+    <Property name="scale" nameUI="Scale" type="float" ini="2.0" min="0.01" max="50.0" step="0.01" glValue="true"/>
+    <Property name="speed" nameUI="Speed" type="float" ini="0.5" min="0.0" max="10.0" step="0.01" glValue="true"/>
+    <Property name="octaves" nameUI="Octaves" type="int" ini="3" min="1" max="8" step="1" glValue="true"/>
+    <Property name="intensity" nameUI="Intensity" type="float" ini="1.0" min="0.0" max="2.0" step="0.01" glValue="true"/>
+  </Properties>
+</ShaderEffect>

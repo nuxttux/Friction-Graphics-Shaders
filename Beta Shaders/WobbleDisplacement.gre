@@ -1,0 +1,12 @@
+<!-- Wobble / Displacement -->
+<ShaderEffect name="Wobble Displacement" menuPath="Shaders">
+  <Description>Animated wobble displacement. NOTE: this GRE includes a `speed` property that is NOT referenced in the FRAG to reproduce the "'speed' does not correspond to an active uniform variable" error.</Description>
+  <Properties>
+    <Property name="amplitude" nameUI="Amplitude" type="float" ini="12.0" min="0.0" max="200.0" step="0.1" glValue="true" resolutionScaled="true"/>
+    <Property name="frequency" nameUI="Frequency" type="float" ini="1.2" min="0.01" max="10.0" step="0.01" glValue="true"/>
+    <!-- Intentionally present but not used in the frag -->
+    <!--<Property name="speed" nameUI="Speed" type="float" ini="1.0" min="0.0" max="5.0" step="0.01" glValue="true"/>-->
+    <Property name="time" nameUI="Time" type="float" ini="0.0" min="-10000" max="10000" step="0.01" glValue="true"/>
+  </Properties>
+  <Margin value="amplitude"/>
+</ShaderEffect>
