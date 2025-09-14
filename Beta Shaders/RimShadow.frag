@@ -1,4 +1,4 @@
-// Rim Shadow (Multiply)
+// Rim Shadow (Multiply) with Spread
 #version 330 core
 layout(location = 0) out vec4 fragColor;
 
@@ -10,6 +10,7 @@ uniform float intensity;    // shadow darkness multiplier
 uniform float distance;     // base offset in pixels
 uniform float soften;       // softness radius in pixels
 uniform float angle;        // directional shadow (0-360 deg)
+uniform float spread;       // angular spread (degrees, 0–180)
 uniform vec4 shadowColor;   // shadow color (dark)
 
 void main() {
@@ -24,7 +25,7 @@ void main() {
     vec2 dir = vec2(cos(rad), sin(rad));
     vec2 offset = dir * distance / resolution;
 
-    // compute shadow factor: positive when neighboring alpha is less than current
+    // compute shadow factor
     float shadowFactor = clamp((base.a - texture(tex, texCoord + offset).a) * intensity, 0.0, 1.0);
 
     // softened shadow
@@ -49,8 +50,16 @@ void main() {
         shadowFactor = total / weightSum;
     }
 
-    // apply shadow via proper multiply
+    // --- Angular spread control ---
+    vec2 centered = texCoord - 0.5;
+    float angleToPixel = atan(centered.y, centered.x);
+    float diff = abs(atan(sin(angleToPixel - rad), cos(angleToPixel - rad))); // shortest angular difference
+    float spreadRad = radians(spread);
+    float angularMask = smoothstep(spreadRad, 0.0, diff); // 1 inside spread, 0 outside
+
+    shadowFactor *= angularMask;
+
+    // apply shadow via multiply
     vec3 shadow = base.rgb * (1.0 - shadowFactor + shadowFactor * shadowColor.rgb);
     fragColor = vec4(shadow, base.a);
 }
-
