@@ -1,0 +1,9 @@
+<!-- Hue Saturation -->
+<ShaderEffect name="Hue-Saturation" menuPath="Color">
+<Properties>
+<Property name="hue" nameUI="Hue" type="float" min="-180.0" max="180.0" ini="0.0" step="1.0" glValue="true"/>
+<Property name="saturation" nameUI="Saturation" type="float" min="-1.0" max="1.0" ini="0.0" step="0.01" glValue="true"/>
+<Property name="contrast" nameUI="Contrast" type="float" min="-1.0" max="1.0" ini="0.0" step="0.01" glValue="true"/>
+<Property name="lightness" nameUI="Lightness" type="float" min="-1.0" max="1.0" ini="0.0" step="0.01" glValue="true"/>
+</Properties>
+</ShaderEffect>
