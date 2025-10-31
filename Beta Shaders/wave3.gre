@@ -1,0 +1,19 @@
+<!--Waves-->
+<ShaderEffect name="Waves Transform" menuPath="Distort">
+  <Properties>
+    <Property name="frequency"    nameUI="Frequency"    type="float" min="-10000.0" max="10000.0" ini="10.0"  step="1.0" glValue="true"/>
+    <Property name="intensity"    nameUI="Intensity"    type="float" min="-10000.0" max="10000.0" ini="10.0"  step="1.0" glValue="true"/>
+    <Property name="evolution"    nameUI="Evolution"    type="float" min="-10000.0" max="10000.0" ini="10.0"  step="1.0" glValue="true"/>
+
+    <Property name="vertical"     nameUI="Wave Vertical"       type="int"   min="0" max="1" ini="0" step="1" glValue="true"/>
+    <Property name="gradientVertical" nameUI="Gradient Vertical" type="int" min="0" max="1" ini="1" step="1" glValue="true"/>
+
+    <!-- Gradient fade controls -->
+    <Property name="start"        nameUI="Gradient Start"    type="float" min="0.0" max="1.0" ini="0.0" step="0.01" glValue="true"/>
+    <Property name="fadeInLength" nameUI="Fade In Length"    type="float" min="0.0" max="1.0" ini="0.3" step="0.01" glValue="true"/>
+    <Property name="fadeOut"      nameUI="Fade Out Start"    type="float" min="0.0" max="1.0" ini="0.7" step="0.01" glValue="true"/>
+    <Property name="fadeOutLength"nameUI="Fade Out Length"   type="float" min="0.0" max="1.0" ini="0.3" step="0.01" glValue="true"/>
+  </Properties>
+  <Margin value="300"/>
+</ShaderEffect>
+
