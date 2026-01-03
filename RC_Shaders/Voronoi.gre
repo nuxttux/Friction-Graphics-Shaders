@@ -1,0 +1,12 @@
+<!--Voronoi-->
+<ShaderEffect name="Voronoi" menuPath="Texture">
+  <Description>Procedural Voronoi texture. Animated with time. Mask-ready.</Description>
+  <Properties>
+    <Property name="time" nameUI="Time" type="float" ini="0.0" min="-1000.0" max="1000.0" step="0.01" glValue="true"/>
+    <Property name="scale" nameUI="Scale" type="float" ini="3.0" min="0.01" max="50.0" step="0.01" glValue="true"/>
+    <Property name="speed" nameUI="Speed" type="float" ini="1.0" min="0.0" max="10.0" step="0.01" glValue="true"/>
+    <Property name="contrast" nameUI="Contrast" type="float" ini="1.0" min="0.1" max="5.0" step="0.01" glValue="true"/>
+    <Property name="intensity" nameUI="Intensity" type="float" ini="1.0" min="0.0" max="2.0" step="0.01" glValue="true"/>
+  </Properties>
+</ShaderEffect>
+

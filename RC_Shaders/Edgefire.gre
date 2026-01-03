@@ -1,0 +1,25 @@
+<!-- Fire Shader -->
+<ShaderEffect name="Edge Fire" menuPath="Stylize">
+    <Properties>
+        <Property name="iTime" nameUI="Time"
+                  type="float" min="0.0" max="10000.0"
+                  ini="0.0" step="1.0" glValue="true"/>
+
+        <Property name="SIZE" nameUI="Flame Height"
+                  type="float" min="0.0" max="300.0"
+                  ini="150.0" step="1.0" glValue="true"/>
+
+        <Property name="ITER" nameUI="Detail"
+                  type="int" min="8" max="64"
+                  ini="32" step="1" glValue="true"/>
+
+        <Property name="flameSpeed" nameUI="Flicker Speed"
+                  type="float" min="0.0" max="5.0"
+                  ini="1.2" step="0.05" glValue="true"/>
+
+        <Property name="flameIntensity" nameUI="Intensity"
+                  type="float" min="0.0" max="5.0"
+                  ini="2.5" step="0.1" glValue="true"/>
+    </Properties>
+</ShaderEffect>
+
