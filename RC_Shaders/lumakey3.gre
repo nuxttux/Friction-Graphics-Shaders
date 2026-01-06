@@ -1,0 +1,31 @@
+<!-- Luma Key V3 -->
+<ShaderEffect name="Luma Key V3" menuPath="Keying">
+  <Properties>
+
+    <Property name="loc" nameUI="Lower Limit"
+              type="float" min="0" max="100" ini="0" step="1" glValue="true"/>
+
+    <Property name="hic" nameUI="Upper Limit"
+              type="float" min="0" max="100" ini="100" step="1" glValue="true"/>
+
+    <Property name="smoothLow" nameUI="Low Smooth"
+              type="float" min="0" max="50" ini="5" step="0.5" glValue="true"/>
+
+    <Property name="smoothHigh" nameUI="High Smooth"
+              type="float" min="0" max="50" ini="5" step="0.5" glValue="true"/>
+
+    <Property name="edgeBias" nameUI="Edge Bias"
+              type="float" min="-100" max="100" ini="0" step="1" glValue="true"/>
+
+    <Property name="spill" nameUI="Spill Suppression"
+              type="float" min="0" max="100" ini="0" step="1" glValue="true"/>
+
+    <Property name="invert" nameUI="Invert"
+              type="int" min="0" max="1" ini="0" step="1" glValue="true"/>
+
+    <Property name="premultiply" nameUI="Premultiply Output"
+              type="int" min="0" max="1" ini="1" step="1" glValue="true"/>
+
+  </Properties>
+</ShaderEffect>
+

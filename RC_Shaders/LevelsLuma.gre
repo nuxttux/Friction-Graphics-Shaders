@@ -1,0 +1,19 @@
+<!-- Luma Levels -->
+<ShaderEffect name="Luma Levels" menuPath="Color">
+  <Properties>
+
+    <Property name="black" nameUI="Black"
+              type="float" min="0" max="100" ini="0"
+              step="0.5" glValue="true"/>
+
+    <Property name="mid" nameUI="Mid"
+              type="float" min="1" max="99" ini="50"
+              step="1" glValue="true"/>
+
+    <Property name="white" nameUI="White"
+              type="float" min="0" max="100" ini="100"
+              step="0.5" glValue="true"/>
+
+  </Properties>
+</ShaderEffect>
+
