@@ -1,0 +1,58 @@
+<!-- Halftone -->
+<ShaderEffect name="Halftone Dot" menuPath="Stylize">
+    <Properties>
+
+        <Property name="dotSize"
+                  nameUI="Dot Size (px)"
+                  type="float"
+                  min="2.0"
+                  max="200.0"
+                  ini="16.0"
+                  step="1.0"
+                  glValue="true"/>
+
+        <Property name="contrast"
+                  nameUI="Contrast"
+                  type="float"
+                  min="0.2"
+                  max="2.0"
+                  ini="1.0"
+                  step="0.05"
+                  glValue="true"/>
+
+        <Property name="angle"
+                  nameUI="Rotation"
+                  type="float"
+                  min="0.0"
+                  max="90.0"
+                  ini="0.0"
+                  step="1.0"
+                  glValue="true"/>
+
+        <Property name="dotColor"
+                  nameUI="Dot Color"
+                  type="color"
+                  ini="[0, 0, 0, 255]"
+                  glValue="true"/>
+
+        <Property name="dotOpacity"
+                  nameUI="Dot Opacity"
+                  type="float"
+                  min="0.0"
+                  max="1.0"
+                  ini="0.8"
+                  step="0.05"
+                  glValue="true"/>
+
+        <Property name="invert"
+                  nameUI="Invert"
+                  type="float"
+                  min="0.0"
+                  max="1.0"
+                  ini="0.0"
+                  step="1.0"
+                  glValue="true"/>
+
+    </Properties>
+</ShaderEffect>
+
